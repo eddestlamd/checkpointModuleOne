@@ -20,6 +20,8 @@ public class ChecklistController {
     public String showApp(Model model){
         List<Checkitem> checkList = repository.findAll();
         model.addAttribute("checkList", checkList);
+        System.out.println("CHANGES HAS BEEN MADE");
+        System.out.println("CHANGES TWO");
 
         return "checklist";
     }
@@ -33,6 +35,7 @@ public class ChecklistController {
     @PostMapping("/save")
     public String set(@ModelAttribute Checkitem checkitem){
         repository.save(checkitem);
+
 
         return "redirect:/";
     }
