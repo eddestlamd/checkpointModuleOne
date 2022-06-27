@@ -21,6 +21,7 @@ public class ChecklistController {
         List<Checkitem> checkList = repository.findAll();
         model.addAttribute("checkList", checkList);
         System.out.println("CHANGE TWWO");
+        System.out.println("changes from amanda-1_dev");
 
         return "checklist";
     }
