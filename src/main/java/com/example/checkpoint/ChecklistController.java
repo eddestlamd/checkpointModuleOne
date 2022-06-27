@@ -20,8 +20,7 @@ public class ChecklistController {
     public String showApp(Model model){
         List<Checkitem> checkList = repository.findAll();
         model.addAttribute("checkList", checkList);
-        System.out.println("CHANGES HAS BEEN MADE");
-        System.out.println("CHANGES TWO");
+        System.out.println("CHANGE ONE");
 
         return "checklist";
     }
